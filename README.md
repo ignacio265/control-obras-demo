@@ -56,7 +56,7 @@ todos los días desde la API REST del ERP de la empresa.
 
 ```
 generador/   datos simulados y script que arma las páginas
-sitio/       lo que se publica: HTML y una hoja de estilos
+sitio/       lo que se publica: HTML y una hoja de estilos, bajo demo-obras/
 docs/        capturas para este README
 ```
 
@@ -70,7 +70,7 @@ python3 generador/generar.py
 python3 -m http.server 8000 --directory sitio
 ```
 
-Después abre <http://localhost:8000>.
+Después abre <http://localhost:8000/demo-obras/>.
 
 ### Despliegue
 
@@ -141,7 +141,7 @@ python3 generador/generar.py
 python3 -m http.server 8000 --directory sitio
 ```
 
-Then open <http://localhost:8000>.
+Then open <http://localhost:8000/demo-obras/>.
 
 ### Deployment
 

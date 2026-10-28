@@ -6,13 +6,17 @@ script para no repetir a mano el menú, el pie y el aviso de demo en cada págin
     python3 generador/generar.py
 """
 import hashlib
+import re
 from html import escape
 from pathlib import Path
 
 from datos import (CUENTAS, HOY, MES_ACTUAL, OBRAS, PARTIDAS_P001, PERFILES, PROPUESTAS,
                    SUBCATEGORIAS, SUGERENCIAS_P001, USUARIOS, rotulo_mes)
 
-SITIO = Path(__file__).resolve().parent.parent / "sitio"
+# Las páginas viven bajo /demo-obras/ también en su propio sitio de Netlify, para
+# que la ruta sea la misma cuando ardillalab.com las sirve como proxy.
+BASE = "/demo-obras/"
+SITIO = Path(__file__).resolve().parent.parent / "sitio" / BASE.strip("/")
 
 CALENDAR = "https://calendar.app.google/a8F5saYxdxWwMsWz7"
 WHATSAPP = ("https://wa.me/56985272032?text=Hola%2C%20vi%20la%20demo%20en%20ardillalab.com%20"
@@ -181,6 +185,9 @@ def pagina(nombre, titulo, cuerpo, activo, obra_activa=None, perfil_activo=False
 </body>
 </html>
 """
+    # Todo enlace interno va absoluto con BASE: así no depende de si la URL con
+    # que se abrió la página termina o no en barra.
+    html = re.sub(r'href="(?!https?:|data:|#|/)', f'href="{BASE}', html)
     (SITIO / nombre).write_text(html, encoding="utf-8")
 
 
