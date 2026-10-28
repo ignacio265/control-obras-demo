@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GG Obra · Centro Logístico Los Aromos · Control de Obras</title>
+<meta name="description" content="Demo navegable de un sistema de control financiero de obras. Datos simulados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=4bd58446">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23E8872A'/%3E%3Cpath d='M6 18v-6M10 18V7M14 18v-4M18 18V9' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topbar">
+  <a class="marca" href="index.html">
+    <span class="marca-icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+    <span class="marca-texto">Control de <span>Obras</span></span>
+  </a>
+  <div class="topbar-der">
+    <span class="pastilla-demo">Modo demo · datos simulados</span>
+    <a href="mi-perfil.html" class="user-chip" title="Mi perfil">
+      <span class="avatar" aria-hidden="true">UD</span><span class="user-chip-nombre">Usuario Demo</span>
+    </a>
+  </div>
+</header>
+<div class="layout">
+
+<nav class="sidebar" aria-label="Menú principal">
+  <a href="index.html" class="nav-item activo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span>Proyectos</span></a>
+  <ul class="menu-obras"><li><a href="obra-mirador-proyeccion.html" title="Edificio Mirador del Valle">Edificio Mirador del Valle</a></li><li><a href="obra-aromos-proyeccion.html" class="activo" aria-current="page" title="Centro Logístico Los Aromos">Centro Logístico Los Aromos</a></li><li><a href="obra-costanera-proyeccion.html" title="Clínica Costanera Sur">Clínica Costanera Sur</a></li></ul>
+  <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span>Dashboard</span></a>
+  <a href="propuestas.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg><span>Propuestas</span></a>
+  <div class="menu-sep"></div>
+  <a href="usuarios.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Usuarios</span></a>
+  <a href="configuracion.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><span>Configuración</span></a>
+</nav>
+<main class="content">
+
+<div class="migas"><a href="index.html">Proyectos</a> › <a href="obra-aromos-proyeccion.html">Centro Logístico Los Aromos</a> › GG Obra</div>
+<div class="cabecera">
+  <h1>GG Obra <span>· Gastos generales</span></h1>
+  <div class="cabecera-acciones">
+    <button type="button" class="btn tip-abajo" aria-disabled="true" data-accion="Permitiría cambiar la partida de los ítems seleccionados" aria-label="Asignar partida (bloqueado en la demo: Permitiría cambiar la partida de los ítems seleccionados)">Asignar partida</button>
+    <button type="button" class="btn tip-abajo tip-der" aria-disabled="true" data-accion="Descargaría el detalle en una planilla Excel" aria-label="Exportar (bloqueado en la demo: Descargaría el detalle en una planilla Excel)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Exportar</button>
+  </div>
+</div>
+<nav class="subnav" aria-label="Secciones de la obra"><a href="obra-aromos-proyeccion.html">Proyección</a><a href="obra-aromos-materiales.html">Materiales</a><a href="obra-aromos-mano-de-obra.html">Mano de Obra</a><a href="obra-aromos-gg-obra.html" class="activo">GG Obra</a></nav>
+<aside class="guia"><span class="guia-icono" aria-hidden="true">i</span><p><strong>Los gastos generales propios de la obra.</strong> Arriendos, fletes, seguros y servicios que no son material ni mano de obra, ordenados por partida.</p></aside>
+<section class="tarjeta partidas-card">
+  <div class="partidas-cab"><h2>Por partida</h2><span class="muted">$47,4 M a la fecha · 100 % clasificado</span></div>
+  <div class="partidas-grid"><div class="partida-resumen"><div class="partida-fila"><span>Seguros y garantías</span><b>$12,5 M</b></div><div class="barra oliva"><b style="width:26.4%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Fletes y traslados</span><b>$11,2 M</b></div><div class="barra oliva"><b style="width:23.7%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Instalación de faena</span><b>$10,7 M</b></div><div class="barra oliva"><b style="width:22.5%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Arriendo de equipos</span><b>$5,6 M</b></div><div class="barra oliva"><b style="width:11.8%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Elementos de protección</span><b>$4,4 M</b></div><div class="barra oliva"><b style="width:9.3%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Alimentación y alojamiento</span><b>$2,9 M</b></div><div class="barra oliva"><b style="width:6.2%"></b></div></div></div>
+</section>
+<div class="tarjeta filtros"><label class="campo"><span>Mes</span><input type="text" value="Todos" disabled></label><label class="campo"><span>Partida</span><input type="text" value="Todas" disabled></label><label class="campo"><span>Buscar</span><input type="text" value="código o descripción" disabled></label><div class="filtros-botones"><button type="button" class="btn" aria-disabled="true" data-accion="Filtraría la tabla según los campos elegidos" aria-label="Filtrar (bloqueado en la demo: Filtraría la tabla según los campos elegidos)">Filtrar</button></div></div>
+<div class="tarjeta tabla-card">
+  <div class="tabla-scroll">
+    <table>
+      <thead><tr><th>Código</th><th>Descripción</th><th class="num">Cantidad</th><th>Un.</th>
+        <th class="num">Precio unit.</th><th class="num">Monto</th><th class="num" title="Documentos del ERP">Docs</th>
+        <th>Período</th><th>Partida</th></tr></thead>
+      <tbody><tr><td class="mono">GG-332</td><td>Boleta de garantía fiel cumplimiento</td><td class="num">7</td><td>UN</td><td class="num">$1.071.500</td><td class="num"><b>$7.500.500</b></td><td class="num">2</td><td>abr-26 a may-26</td><td><span class="partida">Seguros y garantías</span></td></tr><tr><td class="mono">GG-301</td><td>Contenedor oficina 20 pies (arriendo)</td><td class="num">15</td><td>MES</td><td class="num">$429.110</td><td class="num"><b>$6.436.650</b></td><td class="num">14</td><td>sep-26</td><td><span class="partida">Instalación de faena</span></td></tr><tr><td class="mono">GG-322</td><td>Flete de materiales a obra</td><td class="num">30</td><td>SERV</td><td class="num">$198.910</td><td class="num"><b>$5.967.300</b></td><td class="num">11</td><td>abr-26 a oct-26</td><td><span class="partida">Fletes y traslados</span></td></tr><tr><td class="mono">GG-321</td><td>Camión pluma (servicio)</td><td class="num">17</td><td>SERV</td><td class="num">$309.080</td><td class="num"><b>$5.254.360</b></td><td class="num">5</td><td>sep-26 a oct-26</td><td><span class="partida">Fletes y traslados</span></td></tr><tr><td class="mono">GG-331</td><td>Póliza todo riesgo construcción</td><td class="num">2</td><td>UN</td><td class="num">$2.509.450</td><td class="num"><b>$5.018.900</b></td><td class="num">5</td><td>mar-26 a sep-26</td><td><span class="partida">Seguros y garantías</span></td></tr><tr><td class="mono">GG-302</td><td>Baño químico (arriendo)</td><td class="num">26</td><td>MES</td><td class="num">$163.410</td><td class="num"><b>$4.248.660</b></td><td class="num">7</td><td>jun-26 a jul-26</td><td><span class="partida">Instalación de faena</span></td></tr><tr><td class="mono">GG-311</td><td>Plataforma tijera 10 m (arriendo)</td><td class="num">49</td><td>DÍA</td><td class="num">$67.980</td><td class="num"><b>$3.331.020</b></td><td class="num">11</td><td>ago-26 a oct-26</td><td><span class="partida">Arriendo de equipos</span></td></tr><tr><td class="mono">GG-352</td><td>Arnés de seguridad con línea de vida</td><td class="num">35</td><td>UN</td><td class="num">$86.670</td><td class="num"><b>$3.033.450</b></td><td class="num">13</td><td>sep-26 a oct-26</td><td><span class="partida">Elementos de protección</span></td></tr><tr><td class="mono">GG-342</td><td>Alojamiento cuadrilla</td><td class="num">71</td><td>NOCHE</td><td class="num">$32.900</td><td class="num"><b>$2.335.900</b></td><td class="num">5</td><td>jun-26 a jul-26</td><td><span class="partida">Alimentación y alojamiento</span></td></tr><tr><td class="mono">GG-312</td><td>Generador 20 kVA (arriendo)</td><td class="num">45</td><td>DÍA</td><td class="num">$50.520</td><td class="num"><b>$2.273.400</b></td><td class="num">5</td><td>abr-26 a oct-26</td><td><span class="partida">Arriendo de equipos</span></td></tr><tr><td class="mono">GG-351</td><td>Kit EPP (casco. guantes y lentes)</td><td class="num">53</td><td>UN</td><td class="num">$26.070</td><td class="num"><b>$1.381.710</b></td><td class="num">5</td><td>may-26 a jun-26</td><td><span class="partida">Elementos de protección</span></td></tr><tr><td class="mono">GG-341</td><td>Colaciones del personal</td><td class="num">129</td><td>UN</td><td class="num">$4.720</td><td class="num"><b>$608.880</b></td><td class="num">13</td><td>abr-26 a sep-26</td><td><span class="partida">Alimentación y alojamiento</span></td></tr><tr class="fila-total"><td></td><td>Total 12 ítems</td><td></td><td></td><td></td><td class="num">$47.390.730</td><td></td><td></td><td></td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer class="pie">
+  <details>
+    <summary>Observaciones de la demo</summary>
+    <p>Esta demo está escrita solo en HTML y CSS: no guarda nada, no tiene usuarios reales y todos los datos (obras, clientes, códigos y montos) son simulados.
+    El aplicativo original corre en la nube y está desarrollado con:</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">JavaScript</span><span class="chip">R</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">HTML y CSS</span><span class="chip">Docker</span><span class="chip">Google Cloud Run</span><span class="chip">Cloud SQL</span><span class="chip">Cloud Storage</span><span class="chip">pandas</span><span class="chip">API REST del ERP</span></div>
+  </details>
+  <span>Desarrollado por <a href="https://ardillalab.com" target="_blank" rel="noopener">ardillalab.com</a></span>
+</footer>
+
+<div id="demo" popover class="modal-demo" role="dialog" aria-labelledby="demo-titulo">
+  <div class="modal-cuerpo">
+    <div class="modal-ardilla"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c6 0 6-16 18-16"/><path d="M3 20h18"/></svg></div>
+    <h2 id="demo-titulo">¿Te interesa conocer más?</h2>
+    <p>Esta función está disponible en la versión completa. Agenda una demo y te la muestro funcionando con tus propias obras.</p>
+    <div class="modal-botones">
+      <a class="btn btn-primario" href="https://calendar.app.google/a8F5saYxdxWwMsWz7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar en Google Calendar</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/56985272032?text=Hola%2C%20vi%20la%20demo%20en%20ardillalab.com%20y%20me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>Escribir por WhatsApp</a>
+    </div>
+    <button type="button" class="modal-cerrar" popovertarget="demo" popovertargetaction="hide">Seguir explorando</button>
+  </div>
+</div>
+</body>
+</html>

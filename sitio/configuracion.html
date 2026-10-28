@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Configuración · Control de Obras</title>
+<meta name="description" content="Demo navegable de un sistema de control financiero de obras. Datos simulados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=4bd58446">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23E8872A'/%3E%3Cpath d='M6 18v-6M10 18V7M14 18v-4M18 18V9' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topbar">
+  <a class="marca" href="index.html">
+    <span class="marca-icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+    <span class="marca-texto">Control de <span>Obras</span></span>
+  </a>
+  <div class="topbar-der">
+    <span class="pastilla-demo">Modo demo · datos simulados</span>
+    <a href="mi-perfil.html" class="user-chip" title="Mi perfil">
+      <span class="avatar" aria-hidden="true">UD</span><span class="user-chip-nombre">Usuario Demo</span>
+    </a>
+  </div>
+</header>
+<div class="layout">
+
+<nav class="sidebar" aria-label="Menú principal">
+  <a href="index.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span>Proyectos</span></a>
+  <ul class="menu-obras"><li><a href="obra-mirador-proyeccion.html" title="Edificio Mirador del Valle">Edificio Mirador del Valle</a></li><li><a href="obra-aromos-proyeccion.html" title="Centro Logístico Los Aromos">Centro Logístico Los Aromos</a></li><li><a href="obra-costanera-proyeccion.html" title="Clínica Costanera Sur">Clínica Costanera Sur</a></li></ul>
+  <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span>Dashboard</span></a>
+  <a href="propuestas.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg><span>Propuestas</span></a>
+  <div class="menu-sep"></div>
+  <a href="usuarios.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Usuarios</span></a>
+  <a href="configuracion.html" class="nav-item activo"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><span>Configuración</span></a>
+</nav>
+<main class="content">
+
+<div class="cabecera">
+  <h1>Configuración</h1>
+  <div class="cabecera-acciones"><button type="button" class="btn btn-primario tip-abajo tip-der" aria-disabled="true" data-accion="Crearía una subcategoría nueva dentro de una cuenta" aria-label="Nueva subcategoría (bloqueado en la demo: Crearía una subcategoría nueva dentro de una cuenta)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Nueva subcategoría</button></div>
+</div>
+<nav class="subnav" aria-label="Secciones de configuración"><a href="configuracion.html" class="activo">Subcategorías</a><a href="rendimientos.html">Rendimientos</a></nav>
+<aside class="guia"><span class="guia-icono" aria-hidden="true">i</span><p><strong>Las subcategorías ordenan el gasto dentro de cada cuenta.</strong> Son las partidas que se ven en Materiales, Mano de Obra y GG Obra, y las mismas para todas las obras.</p></aside>
+<div class="config-grid"><section class="tarjeta tabla-card"><h2 class="tabla-titulo">Materiales</h2><div class="tabla-scroll"><table><thead><tr><th>Subcategoría</th><th class="num">Ítems</th><th></th></tr></thead><tbody><tr><td>Conductores</td><td class="num">4</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Canalizaciones</td><td class="num">4</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Tableros y protecciones</td><td class="num">5</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Iluminación</td><td class="num">4</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Fijaciones y accesorios</td><td class="num">4</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Puesta a tierra</td><td class="num">3</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Enchufes y control</td><td class="num">3</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr></tbody></table></div></section><section class="tarjeta tabla-card"><h2 class="tabla-titulo">Mano de obra</h2><div class="tabla-scroll"><table><thead><tr><th>Subcategoría</th><th class="num">Ítems</th><th></th></tr></thead><tbody><tr><td>Cuadrilla de montaje</td><td class="num">3</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Especialistas</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Supervisión</td><td class="num">3</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Horas extraordinarias</td><td class="num">1</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr></tbody></table></div></section><section class="tarjeta tabla-card"><h2 class="tabla-titulo">GG Obra</h2><div class="tabla-scroll"><table><thead><tr><th>Subcategoría</th><th class="num">Ítems</th><th></th></tr></thead><tbody><tr><td>Instalación de faena</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Arriendo de equipos</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Fletes y traslados</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Seguros y garantías</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Alimentación y alojamiento</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr><tr><td>Elementos de protección</td><td class="num">2</td><td><button type="button" class="btn btn-chico tip-tabla" aria-disabled="true" title="🔒 Permitiría cambiar el nombre de la subcategoría" aria-label="Editar (bloqueado en la demo: Permitiría cambiar el nombre de la subcategoría)">Editar</button></td></tr></tbody></table></div></section></div>
+
+</main>
+</div>
+
+<footer class="pie">
+  <details>
+    <summary>Observaciones de la demo</summary>
+    <p>Esta demo está escrita solo en HTML y CSS: no guarda nada, no tiene usuarios reales y todos los datos (obras, clientes, códigos y montos) son simulados.
+    El aplicativo original corre en la nube y está desarrollado con:</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">JavaScript</span><span class="chip">R</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">HTML y CSS</span><span class="chip">Docker</span><span class="chip">Google Cloud Run</span><span class="chip">Cloud SQL</span><span class="chip">Cloud Storage</span><span class="chip">pandas</span><span class="chip">API REST del ERP</span></div>
+  </details>
+  <span>Desarrollado por <a href="https://ardillalab.com" target="_blank" rel="noopener">ardillalab.com</a></span>
+</footer>
+
+<div id="demo" popover class="modal-demo" role="dialog" aria-labelledby="demo-titulo">
+  <div class="modal-cuerpo">
+    <div class="modal-ardilla"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c6 0 6-16 18-16"/><path d="M3 20h18"/></svg></div>
+    <h2 id="demo-titulo">¿Te interesa conocer más?</h2>
+    <p>Esta función está disponible en la versión completa. Agenda una demo y te la muestro funcionando con tus propias obras.</p>
+    <div class="modal-botones">
+      <a class="btn btn-primario" href="https://calendar.app.google/a8F5saYxdxWwMsWz7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar en Google Calendar</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/56985272032?text=Hola%2C%20vi%20la%20demo%20en%20ardillalab.com%20y%20me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>Escribir por WhatsApp</a>
+    </div>
+    <button type="button" class="modal-cerrar" popovertarget="demo" popovertargetaction="hide">Seguir explorando</button>
+  </div>
+</div>
+</body>
+</html>

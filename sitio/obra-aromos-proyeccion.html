@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proyección · Centro Logístico Los Aromos · Control de Obras</title>
+<meta name="description" content="Demo navegable de un sistema de control financiero de obras. Datos simulados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=4bd58446">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23E8872A'/%3E%3Cpath d='M6 18v-6M10 18V7M14 18v-4M18 18V9' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topbar">
+  <a class="marca" href="index.html">
+    <span class="marca-icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+    <span class="marca-texto">Control de <span>Obras</span></span>
+  </a>
+  <div class="topbar-der">
+    <span class="pastilla-demo">Modo demo · datos simulados</span>
+    <a href="mi-perfil.html" class="user-chip" title="Mi perfil">
+      <span class="avatar" aria-hidden="true">UD</span><span class="user-chip-nombre">Usuario Demo</span>
+    </a>
+  </div>
+</header>
+<div class="layout">
+
+<nav class="sidebar" aria-label="Menú principal">
+  <a href="index.html" class="nav-item activo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span>Proyectos</span></a>
+  <ul class="menu-obras"><li><a href="obra-mirador-proyeccion.html" title="Edificio Mirador del Valle">Edificio Mirador del Valle</a></li><li><a href="obra-aromos-proyeccion.html" class="activo" aria-current="page" title="Centro Logístico Los Aromos">Centro Logístico Los Aromos</a></li><li><a href="obra-costanera-proyeccion.html" title="Clínica Costanera Sur">Clínica Costanera Sur</a></li></ul>
+  <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span>Dashboard</span></a>
+  <a href="propuestas.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg><span>Propuestas</span></a>
+  <div class="menu-sep"></div>
+  <a href="usuarios.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Usuarios</span></a>
+  <a href="configuracion.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><span>Configuración</span></a>
+</nav>
+<main class="content">
+
+<div class="migas"><a href="index.html">Proyectos</a> › <a href="obra-aromos-proyeccion.html">Centro Logístico Los Aromos</a> › Proyección</div>
+<div class="cabecera">
+  <h1>Proyección — <span>Centro Logístico Los Aromos</span></h1>
+  <div class="cabecera-acciones">
+    <button type="button" class="btn tip-abajo tip-der" aria-disabled="true" data-accion="Descargaría esta tabla en una planilla Excel con el mismo formato" aria-label="Exportar (bloqueado en la demo: Descargaría esta tabla en una planilla Excel con el mismo formato)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Exportar</button>
+  </div>
+</div>
+<nav class="subnav" aria-label="Secciones de la obra"><a href="obra-aromos-proyeccion.html" class="activo">Proyección</a><a href="obra-aromos-materiales.html">Materiales</a><a href="obra-aromos-mano-de-obra.html">Mano de Obra</a><a href="obra-aromos-gg-obra.html">GG Obra</a></nav>
+<aside class="guia"><span class="guia-icono" aria-hidden="true">i</span><p><strong>El estado financiero de la obra, mes a mes.</strong> Cruza el presupuesto con el gasto real que llega del ERP. La vista <em>Gastos mensuales</em> muestra solo lo ocurrido; una <em>proyección</em> guardada agrega la estimación de lo que falta y muestra cómo terminaría la obra si se cumple.</p></aside>
+<section class="kpis">
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Presupuesto de costo</div><div class="kpi-valor">$636,1 M</div><div class="kpi-nota">Venta $760,0 M</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Gastado a la fecha</div><div class="kpi-valor">$371,8 M</div><div class="kpi-nota">58,4 % del presupuesto</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Proyectado al término</div><div class="kpi-valor">$657,6 M</div><div class="kpi-nota">según Proyección 1</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Desviación proyectada</div><div class="kpi-valor">-$21,5 M</div><div class="kpi-nota mal">sobre el presupuesto</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Margen proyectado</div><div class="kpi-valor">13,5 %</div><div class="kpi-nota">presupuestado 16,3 %</div></div>
+</section>
+<div class="estados">
+  <input type="radio" name="estado" id="est-gastos">
+  <input type="radio" name="estado" id="est-proy1" checked>
+  <div class="barra-estados">
+    <div class="segmentado" role="tablist">
+      <label for="est-gastos">Gastos mensuales</label>
+      <label for="est-proy1">Proyección 1 · 20-oct-2026</label>
+    </div>
+    <div class="cabecera-acciones">
+      <button type="button" class="btn abre-demo" popovertarget="demo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c6 0 6-16 18-16"/><path d="M3 20h18"/></svg>Curva S</button>
+      <button type="button" class="btn abre-demo btn-primario" popovertarget="demo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>Agregar nueva proyección</button>
+    </div>
+  </div>
+  <div class="panel-estado panel-gastos">
+    <p class="nota-estado">Solo el gasto real registrado hasta oct-26. Los meses que vienen quedan vacíos.</p>
+    
+<div class="tarjeta tabla-card">
+  <div class="tabla-scroll">
+    <table>
+      <thead>
+        <tr class="grupos"><th class="col-fija"></th><th>Presupuesto</th><th colspan="3">Resumen</th><th colspan="15">Gastado</th></tr>
+        <tr><th class="col-fija">Cuenta</th><th class="num">Total</th><th class="num">A la fecha</th><th class="num">Saldo</th><th class="num">% gastado</th><th class="num">mar-26</th><th class="num">abr-26</th><th class="num">may-26</th><th class="num">jun-26</th><th class="num">jul-26</th><th class="num">ago-26</th><th class="num">sep-26</th><th class="num mes-actual">oct-26</th><th class="num">nov-26</th><th class="num">dic-26</th><th class="num">ene-27</th><th class="num">feb-27</th><th class="num">mar-27</th><th class="num">abr-27</th><th class="num">may-27</th></tr>
+      </thead>
+      <tbody><tr><td class="col-fija">Materiales</td><td class="num">$342.700.000</td><td class="num">$203.506.980</td><td class="num">$139.193.020</td><td class="num">59,4 %</td><td class="num">$529.000</td><td class="num">$4.946.000</td><td class="num">$11.892.000</td><td class="num">$20.281.000</td><td class="num">$32.798.000</td><td class="num">$42.681.000</td><td class="num">$44.071.000</td><td class="num mes-actual">$46.308.980</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td></tr><tr><td class="col-fija">Mano de obra</td><td class="num">$205.300.000</td><td class="num">$120.861.980</td><td class="num">$84.438.020</td><td class="num">58,9 %</td><td class="num">$324.000</td><td class="num">$2.550.000</td><td class="num">$6.777.000</td><td class="num">$13.418.000</td><td class="num">$18.866.000</td><td class="num">$21.914.000</td><td class="num">$26.851.000</td><td class="num mes-actual">$30.161.980</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td></tr><tr><td class="col-fija">GG Obra</td><td class="num">$88.100.000</td><td class="num">$47.390.730</td><td class="num">$40.709.270</td><td class="num">53,8 %</td><td class="num">$116.000</td><td class="num">$1.089.000</td><td class="num">$3.046.000</td><td class="num">$5.005.000</td><td class="num">$6.978.000</td><td class="num">$9.848.000</td><td class="num">$11.503.000</td><td class="num mes-actual">$9.805.730</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td><td class="num vacio">—</td></tr><tr class="fila-total"><td class="col-fija">Total costo</td><td class="num">$636.100.000</td><td class="num">$371.759.690</td><td class="num">$264.340.310</td><td class="num">58,4 %</td><td class="num">$969.000</td><td class="num">$8.585.000</td><td class="num">$21.715.000</td><td class="num">$38.704.000</td><td class="num">$58.642.000</td><td class="num">$74.443.000</td><td class="num">$82.425.000</td><td class="num mes-actual">$86.276.690</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td class="num">—</td></tr><tr class="fila-margen" title="El margen no se gasta: no tiene consumo mensual."><td class="col-fija">Margen (16,3 %)</td><td class="num">$123.900.000</td><td class="num">—</td><td class="num">—</td><td class="num">—</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+    </table>
+  </div>
+  <div class="leyenda"><span><i style="background:var(--ink)"></i>Gasto real del ERP</span><span><i style="background:var(--copper)"></i>Mes en curso</span></div>
+</div>
+  </div>
+  <div class="panel-estado panel-proy1">
+    <p class="nota-estado">Guardada por Tomás Herrera el 20-oct-2026. Los meses en azul son la estimación de lo que falta por gastar.</p>
+    
+<div class="tarjeta tabla-card">
+  <div class="tabla-scroll">
+    <table>
+      <thead>
+        <tr class="grupos"><th class="col-fija"></th><th>Presupuesto</th><th colspan="5">Resumen</th><th colspan="15">Real y proyectado</th></tr>
+        <tr><th class="col-fija">Cuenta</th><th class="num">Total</th><th class="num">A la fecha</th><th class="num">Por gastar</th><th class="num">Al término</th><th class="num">DIF</th><th class="num">%</th><th class="num">mar-26</th><th class="num">abr-26</th><th class="num">may-26</th><th class="num">jun-26</th><th class="num">jul-26</th><th class="num">ago-26</th><th class="num">sep-26</th><th class="num mes-actual">oct-26</th><th class="num">nov-26</th><th class="num">dic-26</th><th class="num">ene-27</th><th class="num">feb-27</th><th class="num">mar-27</th><th class="num">abr-27</th><th class="num">may-27</th></tr>
+      </thead>
+      <tbody><tr><td class="col-fija">Materiales</td><td class="num">$342.700.000</td><td class="num">$203.506.980</td><td class="num">$155.927.000</td><td class="num">$359.433.980</td><td class="num dif-neg">-$16.733.980</td><td class="num dif-neg">104,9 %</td><td class="num">$529.000</td><td class="num">$4.946.000</td><td class="num">$11.892.000</td><td class="num">$20.281.000</td><td class="num">$32.798.000</td><td class="num">$42.681.000</td><td class="num">$44.071.000</td><td class="num mes-actual">$46.308.980</td><td class="num proyectado">$45.904.000</td><td class="num proyectado">$40.041.000</td><td class="num proyectado">$31.402.000</td><td class="num proyectado">$21.481.000</td><td class="num proyectado">$11.994.000</td><td class="num proyectado">$4.581.000</td><td class="num proyectado">$524.000</td></tr><tr><td class="col-fija">Mano de obra</td><td class="num">$205.300.000</td><td class="num">$120.861.980</td><td class="num">$92.522.000</td><td class="num">$213.383.980</td><td class="num dif-neg">-$8.083.980</td><td class="num dif-neg">103,9 %</td><td class="num">$324.000</td><td class="num">$2.550.000</td><td class="num">$6.777.000</td><td class="num">$13.418.000</td><td class="num">$18.866.000</td><td class="num">$21.914.000</td><td class="num">$26.851.000</td><td class="num mes-actual">$30.161.980</td><td class="num proyectado">$27.238.000</td><td class="num proyectado">$23.759.000</td><td class="num proyectado">$18.633.000</td><td class="num proyectado">$12.746.000</td><td class="num proyectado">$7.117.000</td><td class="num proyectado">$2.718.000</td><td class="num proyectado">$311.000</td></tr><tr><td class="col-fija">GG Obra</td><td class="num">$88.100.000</td><td class="num">$47.390.730</td><td class="num">$37.413.000</td><td class="num">$84.803.730</td><td class="num dif-pos">$3.296.270</td><td class="num dif-pos">96,3 %</td><td class="num">$116.000</td><td class="num">$1.089.000</td><td class="num">$3.046.000</td><td class="num">$5.005.000</td><td class="num">$6.978.000</td><td class="num">$9.848.000</td><td class="num">$11.503.000</td><td class="num mes-actual">$9.805.730</td><td class="num proyectado">$11.014.000</td><td class="num proyectado">$9.607.000</td><td class="num proyectado">$7.535.000</td><td class="num proyectado">$5.154.000</td><td class="num proyectado">$2.878.000</td><td class="num proyectado">$1.099.000</td><td class="num proyectado">$126.000</td></tr><tr class="fila-total"><td class="col-fija">Total costo</td><td class="num">$636.100.000</td><td class="num">$371.759.690</td><td class="num">$285.862.000</td><td class="num">$657.621.690</td><td class="num dif-neg">-$21.521.690</td><td class="num dif-neg">103,4 %</td><td class="num">$969.000</td><td class="num">$8.585.000</td><td class="num">$21.715.000</td><td class="num">$38.704.000</td><td class="num">$58.642.000</td><td class="num">$74.443.000</td><td class="num">$82.425.000</td><td class="num mes-actual">$86.276.690</td><td class="num proyectado">$84.156.000</td><td class="num proyectado">$73.407.000</td><td class="num proyectado">$57.570.000</td><td class="num proyectado">$39.381.000</td><td class="num proyectado">$21.989.000</td><td class="num proyectado">$8.398.000</td><td class="num proyectado">$961.000</td></tr><tr class="fila-margen" title="El margen no se gasta: no tiene consumo mensual."><td class="col-fija">Margen (16,3 %)</td><td class="num">$123.900.000</td><td class="num">—</td><td class="num">—</td><td class="num">$102.378.310</td><td class="num">-$21.521.690</td><td class="num">13,5 %</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td></tr></tbody>
+    </table>
+  </div>
+  <div class="leyenda"><span><i style="background:var(--ink)"></i>Gasto real del ERP</span><span><i style="background:var(--plan)"></i>Proyectado</span><span><i style="background:var(--copper)"></i>Mes en curso</span></div>
+</div>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer class="pie">
+  <details>
+    <summary>Observaciones de la demo</summary>
+    <p>Esta demo está escrita solo en HTML y CSS: no guarda nada, no tiene usuarios reales y todos los datos (obras, clientes, códigos y montos) son simulados.
+    El aplicativo original corre en la nube y está desarrollado con:</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">JavaScript</span><span class="chip">R</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">HTML y CSS</span><span class="chip">Docker</span><span class="chip">Google Cloud Run</span><span class="chip">Cloud SQL</span><span class="chip">Cloud Storage</span><span class="chip">pandas</span><span class="chip">API REST del ERP</span></div>
+  </details>
+  <span>Desarrollado por <a href="https://ardillalab.com" target="_blank" rel="noopener">ardillalab.com</a></span>
+</footer>
+
+<div id="demo" popover class="modal-demo" role="dialog" aria-labelledby="demo-titulo">
+  <div class="modal-cuerpo">
+    <div class="modal-ardilla"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c6 0 6-16 18-16"/><path d="M3 20h18"/></svg></div>
+    <h2 id="demo-titulo">¿Te interesa conocer más?</h2>
+    <p>Esta función está disponible en la versión completa. Agenda una demo y te la muestro funcionando con tus propias obras.</p>
+    <div class="modal-botones">
+      <a class="btn btn-primario" href="https://calendar.app.google/a8F5saYxdxWwMsWz7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar en Google Calendar</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/56985272032?text=Hola%2C%20vi%20la%20demo%20en%20ardillalab.com%20y%20me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>Escribir por WhatsApp</a>
+    </div>
+    <button type="button" class="modal-cerrar" popovertarget="demo" popovertargetaction="hide">Seguir explorando</button>
+  </div>
+</div>
+</body>
+</html>

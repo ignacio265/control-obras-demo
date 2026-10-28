@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mano de Obra · Edificio Mirador del Valle · Control de Obras</title>
+<meta name="description" content="Demo navegable de un sistema de control financiero de obras. Datos simulados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=4bd58446">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23E8872A'/%3E%3Cpath d='M6 18v-6M10 18V7M14 18v-4M18 18V9' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topbar">
+  <a class="marca" href="index.html">
+    <span class="marca-icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+    <span class="marca-texto">Control de <span>Obras</span></span>
+  </a>
+  <div class="topbar-der">
+    <span class="pastilla-demo">Modo demo · datos simulados</span>
+    <a href="mi-perfil.html" class="user-chip" title="Mi perfil">
+      <span class="avatar" aria-hidden="true">UD</span><span class="user-chip-nombre">Usuario Demo</span>
+    </a>
+  </div>
+</header>
+<div class="layout">
+
+<nav class="sidebar" aria-label="Menú principal">
+  <a href="index.html" class="nav-item activo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span>Proyectos</span></a>
+  <ul class="menu-obras"><li><a href="obra-mirador-proyeccion.html" class="activo" aria-current="page" title="Edificio Mirador del Valle">Edificio Mirador del Valle</a></li><li><a href="obra-aromos-proyeccion.html" title="Centro Logístico Los Aromos">Centro Logístico Los Aromos</a></li><li><a href="obra-costanera-proyeccion.html" title="Clínica Costanera Sur">Clínica Costanera Sur</a></li></ul>
+  <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span>Dashboard</span></a>
+  <a href="propuestas.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg><span>Propuestas</span></a>
+  <div class="menu-sep"></div>
+  <a href="usuarios.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Usuarios</span></a>
+  <a href="configuracion.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><span>Configuración</span></a>
+</nav>
+<main class="content">
+
+<div class="migas"><a href="index.html">Proyectos</a> › <a href="obra-mirador-proyeccion.html">Edificio Mirador del Valle</a> › Mano de Obra</div>
+<div class="cabecera">
+  <h1>Mano de Obra <span>· Remuneraciones</span></h1>
+  <div class="cabecera-acciones">
+    <button type="button" class="btn tip-abajo" aria-disabled="true" data-accion="Permitiría cambiar la partida de los ítems seleccionados" aria-label="Asignar partida (bloqueado en la demo: Permitiría cambiar la partida de los ítems seleccionados)">Asignar partida</button>
+    <button type="button" class="btn tip-abajo tip-der" aria-disabled="true" data-accion="Descargaría el detalle en una planilla Excel" aria-label="Exportar (bloqueado en la demo: Descargaría el detalle en una planilla Excel)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Exportar</button>
+  </div>
+</div>
+<nav class="subnav" aria-label="Secciones de la obra"><a href="obra-mirador-proyeccion.html">Proyección</a><a href="obra-mirador-materiales.html">Materiales</a><a href="obra-mirador-mano-de-obra.html" class="activo">Mano de Obra</a><a href="obra-mirador-gg-obra.html">GG Obra</a></nav>
+<aside class="guia"><span class="guia-icono" aria-hidden="true">i</span><p><strong>El costo del personal de la obra.</strong> Las remuneraciones llegan del ERP agrupadas por cargo y se cargan a su partida, para comparar lo pagado contra lo presupuestado.</p></aside>
+<section class="tarjeta partidas-card">
+  <div class="partidas-cab"><h2>Por partida</h2><span class="muted">$124,2 M a la fecha · 100 % clasificado</span></div>
+  <div class="partidas-grid"><div class="partida-resumen"><div class="partida-fila"><span>Cuadrilla de montaje</span><b>$74,0 M</b></div><div class="barra oliva"><b style="width:59.6%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Especialistas</span><b>$24,9 M</b></div><div class="barra oliva"><b style="width:20.0%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Supervisión</span><b>$22,0 M</b></div><div class="barra oliva"><b style="width:17.7%"></b></div></div><div class="partida-resumen"><div class="partida-fila"><span>Horas extraordinarias</span><b>$3,3 M</b></div><div class="barra oliva"><b style="width:2.7%"></b></div></div></div>
+</section>
+<div class="tarjeta filtros"><label class="campo"><span>Mes</span><input type="text" value="Todos" disabled></label><label class="campo"><span>Partida</span><input type="text" value="Todas" disabled></label><label class="campo"><span>Buscar</span><input type="text" value="código o descripción" disabled></label><div class="filtros-botones"><button type="button" class="btn" aria-disabled="true" data-accion="Filtraría la tabla según los campos elegidos" aria-label="Filtrar (bloqueado en la demo: Filtraría la tabla según los campos elegidos)">Filtrar</button></div></div>
+<div class="tarjeta tabla-card">
+  <div class="tabla-scroll">
+    <table>
+      <thead><tr><th>Código</th><th>Descripción</th><th class="num">HH</th><th>Un.</th>
+        <th class="num">Precio unit.</th><th class="num">Monto</th><th class="num" title="Documentos del ERP">Docs</th>
+        <th>Período</th><th>Partida</th></tr></thead>
+      <tbody><tr><td class="mono">MO-203</td><td>Ayudante eléctrico</td><td class="num">5.455</td><td>HH</td><td class="num">$5.880</td><td class="num"><b>$32.075.400</b></td><td class="num">4</td><td>sep-26 a oct-26</td><td><span class="partida">Cuadrilla de montaje</span></td></tr><tr><td class="mono">MO-201</td><td>Maestro eléctrico primera</td><td class="num">2.638</td><td>HH</td><td class="num">$10.130</td><td class="num"><b>$26.722.940</b></td><td class="num">8</td><td>abr-26 a jun-26</td><td><span class="partida">Cuadrilla de montaje</span></td></tr><tr><td class="mono">MO-202</td><td>Maestro eléctrico segunda</td><td class="num">1.971</td><td>HH</td><td class="num">$7.710</td><td class="num"><b>$15.196.410</b></td><td class="num">2</td><td>abr-26 a may-26</td><td><span class="partida">Cuadrilla de montaje</span></td></tr><tr><td class="mono">MO-211</td><td>Técnico en tableros</td><td class="num">1.328</td><td>HH</td><td class="num">$11.410</td><td class="num"><b>$15.152.480</b></td><td class="num">11</td><td>jun-26 a jul-26</td><td><span class="partida">Especialistas</span></td></tr><tr><td class="mono">MO-221</td><td>Supervisor eléctrico</td><td class="num">717</td><td>HH</td><td class="num">$15.510</td><td class="num"><b>$11.120.670</b></td><td class="num">2</td><td>may-26 a jun-26</td><td><span class="partida">Supervisión</span></td></tr><tr><td class="mono">MO-212</td><td>Técnico en corrientes débiles</td><td class="num">852</td><td>HH</td><td class="num">$11.430</td><td class="num"><b>$9.738.360</b></td><td class="num">2</td><td>jul-26 a ago-26</td><td><span class="partida">Especialistas</span></td></tr><tr><td class="mono">MO-222</td><td>Prevencionista de riesgos</td><td class="num">468</td><td>HH</td><td class="num">$12.640</td><td class="num"><b>$5.915.520</b></td><td class="num">7</td><td>jun-26 a ago-26</td><td><span class="partida">Supervisión</span></td></tr><tr><td class="mono">MO-223</td><td>Bodeguero de obra</td><td class="num">704</td><td>HH</td><td class="num">$7.120</td><td class="num"><b>$5.012.480</b></td><td class="num">2</td><td>abr-26 a jul-26</td><td><span class="partida">Supervisión</span></td></tr><tr><td class="mono">MO-231</td><td>Horas extraordinarias cuadrilla</td><td class="num">273</td><td>HH</td><td class="num">$12.140</td><td class="num"><b>$3.314.220</b></td><td class="num">14</td><td>jul-26</td><td><span class="partida">Horas extraordinarias</span></td></tr><tr class="fila-total"><td></td><td>Total 9 ítems</td><td></td><td></td><td></td><td class="num">$124.248.480</td><td></td><td></td><td></td></tr></tbody>
+    </table>
+  </div>
+</div>
+
+</main>
+</div>
+
+<footer class="pie">
+  <details>
+    <summary>Observaciones de la demo</summary>
+    <p>Esta demo está escrita solo en HTML y CSS: no guarda nada, no tiene usuarios reales y todos los datos (obras, clientes, códigos y montos) son simulados.
+    El aplicativo original corre en la nube y está desarrollado con:</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">JavaScript</span><span class="chip">R</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">HTML y CSS</span><span class="chip">Docker</span><span class="chip">Google Cloud Run</span><span class="chip">Cloud SQL</span><span class="chip">Cloud Storage</span><span class="chip">pandas</span><span class="chip">API REST del ERP</span></div>
+  </details>
+  <span>Desarrollado por <a href="https://ardillalab.com" target="_blank" rel="noopener">ardillalab.com</a></span>
+</footer>
+
+<div id="demo" popover class="modal-demo" role="dialog" aria-labelledby="demo-titulo">
+  <div class="modal-cuerpo">
+    <div class="modal-ardilla"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c6 0 6-16 18-16"/><path d="M3 20h18"/></svg></div>
+    <h2 id="demo-titulo">¿Te interesa conocer más?</h2>
+    <p>Esta función está disponible en la versión completa. Agenda una demo y te la muestro funcionando con tus propias obras.</p>
+    <div class="modal-botones">
+      <a class="btn btn-primario" href="https://calendar.app.google/a8F5saYxdxWwMsWz7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar en Google Calendar</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/56985272032?text=Hola%2C%20vi%20la%20demo%20en%20ardillalab.com%20y%20me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>Escribir por WhatsApp</a>
+    </div>
+    <button type="button" class="modal-cerrar" popovertarget="demo" popovertargetaction="hide">Seguir explorando</button>
+  </div>
+</div>
+</body>
+</html>

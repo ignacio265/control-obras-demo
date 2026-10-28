@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>P-001 · Propuestas · Control de Obras</title>
+<meta name="description" content="Demo navegable de un sistema de control financiero de obras. Datos simulados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@600;700&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/estilos.css?v=4bd58446">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23E8872A'/%3E%3Cpath d='M6 18v-6M10 18V7M14 18v-4M18 18V9' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E">
+</head>
+<body>
+<header class="topbar">
+  <a class="marca" href="index.html">
+    <span class="marca-icono"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+    <span class="marca-texto">Control de <span>Obras</span></span>
+  </a>
+  <div class="topbar-der">
+    <span class="pastilla-demo">Modo demo · datos simulados</span>
+    <a href="mi-perfil.html" class="user-chip" title="Mi perfil">
+      <span class="avatar" aria-hidden="true">UD</span><span class="user-chip-nombre">Usuario Demo</span>
+    </a>
+  </div>
+</header>
+<div class="layout">
+
+<nav class="sidebar" aria-label="Menú principal">
+  <a href="index.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7Z"/></svg><span>Proyectos</span></a>
+  <ul class="menu-obras"><li><a href="obra-mirador-proyeccion.html" title="Edificio Mirador del Valle">Edificio Mirador del Valle</a></li><li><a href="obra-aromos-proyeccion.html" title="Centro Logístico Los Aromos">Centro Logístico Los Aromos</a></li><li><a href="obra-costanera-proyeccion.html" title="Clínica Costanera Sur">Clínica Costanera Sur</a></li></ul>
+  <a href="dashboard.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg><span>Dashboard</span></a>
+  <a href="propuestas.html" class="nav-item activo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"/><path d="M14 3v6h6"/><path d="M8 13h8M8 17h5"/></svg><span>Propuestas</span></a>
+  <div class="menu-sep"></div>
+  <a href="usuarios.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><span>Usuarios</span></a>
+  <a href="configuracion.html" class="nav-item"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg><span>Configuración</span></a>
+</nav>
+<main class="content">
+
+<div class="migas"><a href="propuestas.html">Propuestas</a> › P-001 · versión 2</div>
+<div class="cabecera">
+  <div>
+    <h1>Hospital Regional del Sur · torre B</h1>
+    <p class="cabecera-meta"><span class="estado estado-p-revision">En revisión</span> Constructora Meridiano · Responsable Rodrigo Saavedra</p>
+  </div>
+  <div class="cabecera-acciones">
+    <button type="button" class="btn tip-abajo" aria-disabled="true" data-accion="Descargaría la propuesta en Excel con su desglose por partida" aria-label="Exportar (bloqueado en la demo: Descargaría la propuesta en Excel con su desglose por partida)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Exportar</button>
+    <button type="button" class="btn tip-abajo" aria-disabled="true" data-accion="Enviaría la propuesta al cliente y la dejaría en estado «Enviada»" aria-label="Enviar al cliente (bloqueado en la demo: Enviaría la propuesta al cliente y la dejaría en estado «Enviada»)">Enviar al cliente</button>
+    <button type="button" class="btn btn-primario tip-abajo tip-der" aria-disabled="true" data-accion="Convertiría la propuesta en el presupuesto inicial de una obra nueva" aria-label="Adjudicar (bloqueado en la demo: Convertiría la propuesta en el presupuesto inicial de una obra nueva)">Adjudicar</button>
+  </div>
+</div>
+<aside class="guia"><span class="guia-icono" aria-hidden="true">i</span><p><strong>El selector de materiales de la propuesta.</strong> Cada partida lista los materiales que la componen. El asistente de códigos propone el código del catálogo que mejor calza con cada descripción del cliente; una persona confirma o elige otro.</p></aside>
+<section class="kpis">
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Materiales</div><div class="kpi-valor">$25,8 M</div><div class="kpi-nota">17 líneas</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">HH proyectadas</div><div class="kpi-valor">658</div><div class="kpi-nota">según rendimientos</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Costo directo</div><div class="kpi-valor">$32,7 M</div><div class="kpi-nota">materiales y mano de obra</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Precio ofertado</div><div class="kpi-valor">1.090 UF</div><div class="kpi-nota">$43,4 M</div></div>
+  <div class="tarjeta kpi"><div class="kpi-rotulo">Margen</div><div class="kpi-valor">24,6 %</div><div class="kpi-nota bien">sobre el mínimo</div></div>
+</section>
+<div class="editor">
+  <div class="editor-tabla tarjeta tabla-card">
+    <div class="editor-barra">
+      <input type="text" placeholder="Agregar ítem del catálogo: nombre o código" disabled>
+      <button type="button" class="btn tip-der" aria-disabled="true" data-accion="Agregaría una partida nueva a la propuesta" aria-label="+ Partida (bloqueado en la demo: Agregaría una partida nueva a la propuesta)">+ Partida</button>
+    </div>
+    <div class="tabla-scroll">
+      <table>
+        <thead><tr><th>Código</th><th>Descripción</th><th>Estado del código</th><th>Un</th><th class="num">Cantidad</th>
+          <th class="num">Costo unit.</th><th class="num">Subtotal</th><th class="num">Rend.</th><th class="num">HH</th></tr></thead>
+        <tbody><tr class="fila-partida"><td colspan="9"><b>1 · Alimentadores generales</b><span> · 4 líneas</span></td></tr><tr class="linea"><td class="mono">MT-10451</td><td>Cable de poder 3x70 mm² + T</td><td><span class="tag tag-confirmado">Confirmado</span></td><td>ML</td><td class="num">145</td><td class="num">$41.200</td><td class="num">$5.974.000</td><td class="num">0,35</td><td class="num">50,8</td></tr><tr class="linea"><td class="mono">MT-14425</td><td>Terminal de compresión 70 mm²</td><td><span class="tag tag-confirmado">Confirmado</span></td><td>UN</td><td class="num">12</td><td class="num">$1.350</td><td class="num">$16.200</td><td class="num">0,2</td><td class="num">2,4</td></tr><tr class="linea"><td class="mono">MT-11215</td><td>Bandeja portaconductores perforada 300 mm</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>ML</td><td class="num">96</td><td class="num">$18.900</td><td class="num">$1.814.400</td><td class="num">0,45</td><td class="num">43,2</td></tr><tr class="linea"><td class="mono">MT-14418</td><td>Varilla roscada 3/8&quot; x 1 m</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>UN</td><td class="num">80</td><td class="num">$1.250</td><td class="num">$100.000</td><td class="num">0,1</td><td class="num">8,0</td></tr><tr class="fila-partida"><td colspan="9"><b>2 · Tablero general de distribución</b><span> · 5 líneas</span></td></tr><tr class="linea"><td class="mono">MT-12105</td><td>Gabinete metálico 800x600x250</td><td><span class="tag tag-confirmado">Confirmado</span></td><td>UN</td><td class="num">2</td><td class="num">$186.000</td><td class="num">$372.000</td><td class="num">6,0</td><td class="num">12,0</td></tr><tr class="linea seleccionada"><td class="mono">MT-12140</td><td>Barra de cobre 30x5 mm</td><td><span class="tag tag-media">Sugerencia media</span></td><td>ML</td><td class="num">14</td><td class="num">$39.600</td><td class="num">$554.400</td><td class="num">0,8</td><td class="num">11,2</td></tr><tr class="linea"><td class="mono">MT-12126</td><td>Interruptor diferencial 4x40 A 30 mA</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>UN</td><td class="num">8</td><td class="num">$52.300</td><td class="num">$418.400</td><td class="num">0,5</td><td class="num">4,0</td></tr><tr class="linea"><td class="mono">MT-12118</td><td>Interruptor termomagnético 3x32 A</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>UN</td><td class="num">24</td><td class="num">$18.700</td><td class="num">$448.800</td><td class="num">0,4</td><td class="num">9,6</td></tr><tr class="linea"><td class="mono">—</td><td>Analizador de redes trifásico</td><td><span class="tag tag-sin">Sin código</span></td><td>UN</td><td class="num">1</td><td class="num">$395.000</td><td class="num">$395.000</td><td class="num">1,5</td><td class="num">1,5</td></tr><tr class="fila-partida"><td colspan="9"><b>3 · Iluminación pisos 1 a 4</b><span> · 5 líneas</span></td></tr><tr class="linea"><td class="mono">MT-13310</td><td>Panel LED 60x60 40 W</td><td><span class="tag tag-confirmado">Confirmado</span></td><td>UN</td><td class="num">312</td><td class="num">$21.900</td><td class="num">$6.832.800</td><td class="num">0,6</td><td class="num">187,2</td></tr><tr class="linea"><td class="mono">MT-13335</td><td>Luminaria de emergencia LED</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>UN</td><td class="num">64</td><td class="num">$17.800</td><td class="num">$1.139.200</td><td class="num">0,5</td><td class="num">32,0</td></tr><tr class="linea"><td class="mono">MT-16627</td><td>Sensor de movimiento 360°</td><td><span class="tag tag-media">Sugerencia media</span></td><td>UN</td><td class="num">48</td><td class="num">$15.800</td><td class="num">$758.400</td><td class="num">0,4</td><td class="num">19,2</td></tr><tr class="linea"><td class="mono">MT-10418</td><td>Cable libre de halógenos 2,5 mm²</td><td><span class="tag tag-confirmado">Confirmado</span></td><td>ML</td><td class="num">4.200</td><td class="num">$540</td><td class="num">$2.268.000</td><td class="num">0,02</td><td class="num">84,0</td></tr><tr class="linea"><td class="mono">MT-11207</td><td>Tubo conduit EMT 3/4&quot; x 3 m</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>UN</td><td class="num">620</td><td class="num">$4.350</td><td class="num">$2.697.000</td><td class="num">0,25</td><td class="num">155,0</td></tr><tr class="fila-partida"><td colspan="9"><b>4 · Puesta a tierra</b><span> · 3 líneas</span></td></tr><tr class="linea"><td class="mono">MT-15501</td><td>Barra copperweld 5/8&quot; x 1,5 m</td><td><span class="tag tag-confirmado">Confirmado</span></td><td>UN</td><td class="num">16</td><td class="num">$14.700</td><td class="num">$235.200</td><td class="num">0,8</td><td class="num">12,8</td></tr><tr class="linea"><td class="mono">MT-15512</td><td>Soldadura exotérmica 90 g</td><td><span class="tag tag-media">Sugerencia media</span></td><td>UN</td><td class="num">40</td><td class="num">$8.900</td><td class="num">$356.000</td><td class="num">0,3</td><td class="num">12,0</td></tr><tr class="linea"><td class="mono">MT-15520</td><td>Conductor de cobre desnudo 35 mm²</td><td><span class="tag tag-alta">Sugerencia alta</span></td><td>ML</td><td class="num">260</td><td class="num">$5.600</td><td class="num">$1.456.000</td><td class="num">0,05</td><td class="num">13,0</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+  <aside class="editor-panel">
+    <section class="tarjeta panel">
+      <h2>Asistente de códigos</h2>
+      <ul class="lista-codigos"><li><span class="tag tag-confirmado">Confirmado</span><b>6</b></li><li><span class="tag tag-alta">Sugerencia alta</span><b>7</b></li><li><span class="tag tag-media">Sugerencia media</span><b>3</b></li><li><span class="tag tag-sin">Sin código</span><b>1</b></li></ul>
+      <button type="button" class="btn btn-ancho" aria-disabled="true" data-accion="Confirmaría de una vez todas las líneas con sugerencia alta" aria-label="Confirmar sugerencias altas (bloqueado en la demo: Confirmaría de una vez todas las líneas con sugerencia alta)">Confirmar sugerencias altas</button>
+    </section>
+    <section class="tarjeta panel">
+      <h2>Línea seleccionada</h2>
+      <p class="linea-sel">Barra de cobre 30x5 mm</p>
+      <p class="muted panel-nota">Candidatos del catálogo, del más al menos parecido:</p>
+      
+<div class="candidato">
+  <div class="candidato-cab"><span class="mono">MT-12140</span><span class="tag tag-media">Sugerencia media</span></div>
+  <b>Barra de cobre 20x5 mm</b>
+  <span class="muted">ML · $31.800 · Misma familia; cambia la medida</span>
+  <button type="button" class="btn btn-primario btn-chico" aria-disabled="true" data-accion="Asignaría este código del catálogo a la línea y traería su costo" aria-label="Usar este código (bloqueado en la demo: Asignaría este código del catálogo a la línea y traería su costo)">Usar este código</button>
+</div>
+<div class="candidato">
+  <div class="candidato-cab"><span class="mono">MT-12144</span><span class="tag tag-media">Sugerencia media</span></div>
+  <b>Barra de cobre 30x5 mm estañada</b>
+  <span class="muted">ML · $44.900 · Coincide la medida; distinto acabado</span>
+  <button type="button" class="btn btn-chico" aria-disabled="true" data-accion="Asignaría este código del catálogo a la línea y traería su costo" aria-label="Usar este código (bloqueado en la demo: Asignaría este código del catálogo a la línea y traería su costo)">Usar este código</button>
+</div>
+<div class="candidato">
+  <div class="candidato-cab"><span class="mono">MT-12161</span><span class="tag tag-baja">Sugerencia baja</span></div>
+  <b>Pletina de cobre 30x3 mm</b>
+  <span class="muted">ML · $27.400 · Producto parecido, otra sección</span>
+  <button type="button" class="btn btn-chico" aria-disabled="true" data-accion="Asignaría este código del catálogo a la línea y traería su costo" aria-label="Usar este código (bloqueado en la demo: Asignaría este código del catálogo a la línea y traería su costo)">Usar este código</button>
+</div>
+    </section>
+  </aside>
+</div>
+
+</main>
+</div>
+
+<footer class="pie">
+  <details>
+    <summary>Observaciones de la demo</summary>
+    <p>Esta demo está escrita solo en HTML y CSS: no guarda nada, no tiene usuarios reales y todos los datos (obras, clientes, códigos y montos) son simulados.
+    El aplicativo original corre en la nube y está desarrollado con:</p>
+    <div class="chips"><span class="chip">Python</span><span class="chip">Django</span><span class="chip">JavaScript</span><span class="chip">R</span><span class="chip">PostgreSQL</span><span class="chip">SQL</span><span class="chip">HTML y CSS</span><span class="chip">Docker</span><span class="chip">Google Cloud Run</span><span class="chip">Cloud SQL</span><span class="chip">Cloud Storage</span><span class="chip">pandas</span><span class="chip">API REST del ERP</span></div>
+  </details>
+  <span>Desarrollado por <a href="https://ardillalab.com" target="_blank" rel="noopener">ardillalab.com</a></span>
+</footer>
+
+<div id="demo" popover class="modal-demo" role="dialog" aria-labelledby="demo-titulo">
+  <div class="modal-cuerpo">
+    <div class="modal-ardilla"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 20c6 0 6-16 18-16"/><path d="M3 20h18"/></svg></div>
+    <h2 id="demo-titulo">¿Te interesa conocer más?</h2>
+    <p>Esta función está disponible en la versión completa. Agenda una demo y te la muestro funcionando con tus propias obras.</p>
+    <div class="modal-botones">
+      <a class="btn btn-primario" href="https://calendar.app.google/a8F5saYxdxWwMsWz7" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>Agendar en Google Calendar</a>
+      <a class="btn btn-whatsapp" href="https://wa.me/56985272032?text=Hola%2C%20vi%20la%20demo%20en%20ardillalab.com%20y%20me%20gustar%C3%ADa%20agendar%20una%20reuni%C3%B3n" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-12.3 7.4L3 21l2.1-5.6A8.4 8.4 0 1 1 21 11.5Z"/></svg>Escribir por WhatsApp</a>
+    </div>
+    <button type="button" class="modal-cerrar" popovertarget="demo" popovertargetaction="hide">Seguir explorando</button>
+  </div>
+</div>
+</body>
+</html>

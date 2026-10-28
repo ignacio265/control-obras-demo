@@ -1,0 +1,16 @@
+# Sitio estático: Netlify publica la carpeta `sitio` tal cual, sin paso de build.
+# Las páginas se regeneran a mano con `python3 generador/generar.py` y se suben ya armadas.
+[build]
+  publish = "sitio"
+  command = ""
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
